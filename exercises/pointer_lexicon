@@ -1,0 +1,6 @@
+type *ptr: A pointer of type named ptr
+*ptr: The value of whatever ptr is pointed at (the meaning of * is pretty differnt than declaring the pointer)
+*(ptr + i): The value of (whatever ptr is pointed at plus i) [the brackets are ESSENTIAL]
+&thing : the address of thing
+type *ptr = &thing: A pointer of type named ptr set to the address of thing
+ptr++ : Increment where ptr points
