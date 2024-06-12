@@ -1,8 +1,8 @@
 CFLAGS=-Wall -g
 clean:
-	rm -f ex1 ex3 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 ex15 ex16
+	rm -f ex1 ex3 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 ex15 ex16 ex17
 all:
-	make ex1 ex3 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 ex15 ex16
+	make ex1 ex3 ex7 ex8 ex9 ex10 ex11 ex12 ex13 ex14 ex15 ex16 ex17
 	./ex1
 	./ex3
 	./ex7
@@ -15,3 +15,17 @@ all:
 	./ex14 wow this is ex14
 	./ex15
 	./ex16
+	./ex17 db.dat c
+
+test:
+	make ex17
+	./ex17 db.dat c
+	./ex17 db.dat s 1 zed zed@zedshaw.com
+	./ex17 db.dat s 2 frank frank@zedshaw.com
+	./ex17 db.dat s 3 joe joe@zedshaw.com
+	./ex17 db.dat l
+	./ex17 db.dat d 3
+	./ex17 db.dat l
+	./ex17 db.dat g 2
+	rm -f ex17
+	rm -f db.dat
