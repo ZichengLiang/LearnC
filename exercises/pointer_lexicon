@@ -4,3 +4,22 @@ type *ptr: A pointer of type named ptr
 &thing : the address of thing
 type *ptr = &thing: A pointer of type named ptr set to the address of thing
 ptr++ : Increment where ptr points
+
+From K&R, p78:
+    the unary operator * is the indirection/dereferencing operator; when applied to a pointer, it accesses the object he pointer points to.
+    ```C
+    int x = 1, y = 2, z[10]
+    int *ip;        /* ip is a pointer to int */
+
+    ip = &x;        /* ip now points to x */
+    y = *ip;        /* y is now 1 */
+    *ip = 0;        /* x is now 0 */
+    ip = &z[0]      /* ip now points to z[0] */
+    ```
+    Pointer to functions:
+    ```C
+    double *dp, atof(char *);
+    /* says that in an expression *dp and atof(s) have values of double, and that the argument of atof is a pointer to char.
+    ```
+
+    Note: a pointer is constrained to point to a particular kind of object: every pointer points to a specific data type/
