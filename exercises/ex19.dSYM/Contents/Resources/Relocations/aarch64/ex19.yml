@@ -1,0 +1,15 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     ex19
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _test_debug, symObjAddr: 0x0, symBinAddr: 0x100002E9C, symSize: 0x80 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _test_debug, symObjAddr: 0x0, symBinAddr: 0x100002E9C, symSize: 0x80 }
+  - { offsetInCU: 0x56, offset: 0x56, size: 0x8, addend: 0x0, symName: _test_log_err, symObjAddr: 0x80, symBinAddr: 0x100002F1C, symSize: 0x120 }
+  - { offsetInCU: 0x6B, offset: 0x6B, size: 0x8, addend: 0x0, symName: _test_log_warn, symObjAddr: 0x1A0, symBinAddr: 0x10000303C, symSize: 0x11C }
+  - { offsetInCU: 0x80, offset: 0x80, size: 0x8, addend: 0x0, symName: _test_log_info, symObjAddr: 0x2BC, symBinAddr: 0x100003158, symSize: 0x84 }
+  - { offsetInCU: 0x95, offset: 0x95, size: 0x8, addend: 0x0, symName: _test_check, symObjAddr: 0x340, symBinAddr: 0x1000031DC, symSize: 0x1EC }
+  - { offsetInCU: 0xE8, offset: 0xE8, size: 0x8, addend: 0x0, symName: _test_sentinel, symObjAddr: 0x52C, symBinAddr: 0x1000033C8, symSize: 0x1D4 }
+  - { offsetInCU: 0x12D, offset: 0x12D, size: 0x8, addend: 0x0, symName: _test_check_mem, symObjAddr: 0x700, symBinAddr: 0x10000359C, symSize: 0xDC }
+  - { offsetInCU: 0x164, offset: 0x164, size: 0x8, addend: 0x0, symName: _test_check_debug, symObjAddr: 0x7DC, symBinAddr: 0x100003678, symSize: 0x84 }
+  - { offsetInCU: 0x19B, offset: 0x19B, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x860, symBinAddr: 0x1000036FC, symSize: 0x498 }
+...
