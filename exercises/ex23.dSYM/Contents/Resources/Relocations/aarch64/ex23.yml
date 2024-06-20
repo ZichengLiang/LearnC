@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     ex23
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _normal_copy, symObjAddr: 0x0, symBinAddr: 0x10000327C, symSize: 0x74 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _normal_copy, symObjAddr: 0x0, symBinAddr: 0x10000327C, symSize: 0x74 }
+  - { offsetInCU: 0x93, offset: 0x93, size: 0x8, addend: 0x0, symName: _duffs_device, symObjAddr: 0x74, symBinAddr: 0x1000032F0, symSize: 0x1B4 }
+  - { offsetInCU: 0xF3, offset: 0xF3, size: 0x8, addend: 0x0, symName: _zeds_device, symObjAddr: 0x248, symBinAddr: 0x1000034C4, symSize: 0x1B4 }
+  - { offsetInCU: 0x162, offset: 0x162, size: 0x8, addend: 0x0, symName: _valid_copy, symObjAddr: 0x41C, symBinAddr: 0x100003698, symSize: 0x13C }
+  - { offsetInCU: 0x1B4, offset: 0x1B4, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x558, symBinAddr: 0x1000037D4, symSize: 0x5C8 }
+...

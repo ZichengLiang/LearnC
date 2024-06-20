@@ -32,6 +32,6 @@ test_Database:
 	rm -f db.dat
 
 test:
-	make ex18
-	./ex18 4 3 1 5 6
-	rm -f ex18
+	make ex23
+	./ex23 
+	rm -f ex23
