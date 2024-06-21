@@ -19,6 +19,8 @@ void die (const char *message)
 // case for a function pointer
 typedef int(*compare_cb) (int a, int b);
 
+typedef int *(*sort_cb) (int *numbers, int count, compare_cb cmp);
+
 /**
  * A classic bubble sort function that uses the 
  * compare_cb to do the sorting
@@ -48,6 +50,19 @@ int *bubble_sort(int *numbers, int count, compare_cb cmp)
     return target;
 }
 
+int *no_sort(int *numbers, int count, compare_cb cmp)
+{
+    int *target = malloc(count * sizeof(int));
+
+    memcpy(target, numbers, count * sizeof(int));
+
+    return target;
+}
+
+// these three "order"s are the functions which our function pointer can point to
+// kinda similar to higher order functions in Java, but more concise
+// the C compiler only check if they have the same signature and return type
+// I can try some weird thing
 int sorted_order(int a, int b)
 {
     return a - b;
@@ -67,20 +82,21 @@ int strange_order(int a, int b)
     }
 }
 
-/** 
+
+/**
  * Used to test that we are sorting things correctly
  * by doing the sort and printing it out
  */
-void test_sorting(int *numbers, int count, compare_cb cmp)
+void test_sorting(int *numbers, int count, sort_cb sort, compare_cb cmp)
 {
     int i = 0;
-    int *sorted = bubble_sort(numbers, count, cmp);
+    int *sorted = sort(numbers, count, cmp);
 
     if (!sorted)
         die("Failed to sort as requested");
 
     for (i = 0; i < count; i++) {
-        printf("%d", sorted[i]);
+        printf("%d ", sorted[i]);
     }
     printf("\n");
 
@@ -102,9 +118,11 @@ int main(int argc, char *argv[])
         numbers[i] = atoi(inputs[i]);
     }
 
-    test_sorting(numbers, count, sorted_order);
-    test_sorting(numbers, count, reverse_order);
-    test_sorting(numbers, count, strange_order);
+    test_sorting(numbers, count, bubble_sort,  sorted_order);
+    test_sorting(numbers, count, bubble_sort,  reverse_order);
+    test_sorting(numbers, count, bubble_sort, strange_order);
+
+    test_sorting(numbers, count, no_sort, sorted_order);
 
     free(numbers);
 

@@ -2,12 +2,13 @@
 triple:          'arm64-apple-darwin'
 binary-path:     ex18
 relocations:
-  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _die, symObjAddr: 0x0, symBinAddr: 0x100003A84, symSize: 0x58 }
-  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _die, symObjAddr: 0x0, symBinAddr: 0x100003A84, symSize: 0x58 }
-  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _bubble_sort, symObjAddr: 0x58, symBinAddr: 0x100003ADC, symSize: 0x164 }
-  - { offsetInCU: 0xE1, offset: 0xE1, size: 0x8, addend: 0x0, symName: _sorted_order, symObjAddr: 0x1BC, symBinAddr: 0x100003C40, symSize: 0x20 }
-  - { offsetInCU: 0x117, offset: 0x117, size: 0x8, addend: 0x0, symName: _reverse_order, symObjAddr: 0x1DC, symBinAddr: 0x100003C60, symSize: 0x20 }
-  - { offsetInCU: 0x14D, offset: 0x14D, size: 0x8, addend: 0x0, symName: _strange_order, symObjAddr: 0x1FC, symBinAddr: 0x100003C80, symSize: 0x64 }
-  - { offsetInCU: 0x183, offset: 0x183, size: 0x8, addend: 0x0, symName: _test_sorting, symObjAddr: 0x260, symBinAddr: 0x100003CE4, symSize: 0xCC }
-  - { offsetInCU: 0x1DF, offset: 0x1DF, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x32C, symBinAddr: 0x100003DB0, symSize: 0x130 }
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _die, symObjAddr: 0x0, symBinAddr: 0x1000039FC, symSize: 0x58 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _die, symObjAddr: 0x0, symBinAddr: 0x1000039FC, symSize: 0x58 }
+  - { offsetInCU: 0x65, offset: 0x65, size: 0x8, addend: 0x0, symName: _bubble_sort, symObjAddr: 0x58, symBinAddr: 0x100003A54, symSize: 0x164 }
+  - { offsetInCU: 0xE1, offset: 0xE1, size: 0x8, addend: 0x0, symName: _no_sort, symObjAddr: 0x1BC, symBinAddr: 0x100003BB8, symSize: 0x50 }
+  - { offsetInCU: 0x133, offset: 0x133, size: 0x8, addend: 0x0, symName: _sorted_order, symObjAddr: 0x20C, symBinAddr: 0x100003C08, symSize: 0x20 }
+  - { offsetInCU: 0x169, offset: 0x169, size: 0x8, addend: 0x0, symName: _reverse_order, symObjAddr: 0x22C, symBinAddr: 0x100003C28, symSize: 0x20 }
+  - { offsetInCU: 0x19F, offset: 0x19F, size: 0x8, addend: 0x0, symName: _strange_order, symObjAddr: 0x24C, symBinAddr: 0x100003C48, symSize: 0x64 }
+  - { offsetInCU: 0x1D5, offset: 0x1D5, size: 0x8, addend: 0x0, symName: _test_sorting, symObjAddr: 0x2B0, symBinAddr: 0x100003CAC, symSize: 0xD4 }
+  - { offsetInCU: 0x23F, offset: 0x23F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x384, symBinAddr: 0x100003D80, symSize: 0x160 }
 ...
