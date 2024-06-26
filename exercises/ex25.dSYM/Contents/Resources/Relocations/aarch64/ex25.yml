@@ -1,0 +1,10 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     ex25
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _read_string, symObjAddr: 0x0, symBinAddr: 0x100002F78, symSize: 0x1E4 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _read_string, symObjAddr: 0x0, symBinAddr: 0x100002F78, symSize: 0x1E4 }
+  - { offsetInCU: 0x94, offset: 0x94, size: 0x8, addend: 0x0, symName: _read_int, symObjAddr: 0x1E4, symBinAddr: 0x10000315C, symSize: 0x200 }
+  - { offsetInCU: 0xF5, offset: 0xF5, size: 0x8, addend: 0x0, symName: _read_scan, symObjAddr: 0x3E4, symBinAddr: 0x10000335C, symSize: 0x4E0 }
+  - { offsetInCU: 0x18F, offset: 0x18F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x8C4, symBinAddr: 0x10000383C, symSize: 0x3F8 }
+...

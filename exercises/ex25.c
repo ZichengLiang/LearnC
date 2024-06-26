@@ -10,9 +10,11 @@
 int read_string(char **out_string, int max_buffer)
 {
     *out_string = calloc(1, max_buffer + 1);
+    // calloc is a version of malloc where the memories will all be set as 0
     check_mem(*out_string);
 
     char *result = fgets(*out_string, max_buffer, stdin);
+    // fgets eats the new line, try to fix it with fgetc, but leave out the \0 that ends the string
     check(result != NULL, "Input error.");
 
     return 0;
@@ -30,8 +32,8 @@ int read_int(long *out_int)
     int rc = read_string(&input, MAX_DATA);
     check(rc == 0, "Failed to read number.");
 
-    *out_int = strtoi(input, &end, 10);
-    check((*end == '\0' || *end == "\n") && 
+    *out_int = atoi(input);
+    check((*end == '\0' || *end == 'n') && 
             *input != '\0', "Invalid number: %s", input);
 
     free(input);
