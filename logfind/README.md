@@ -6,3 +6,5 @@ functionalities:
     - it can load permitted log files from ~/.logfind
     - the filename list includes any items permitted by glob function
     - printing matching lines while scanning, try to match with the fastest way
+
+    //test : zicheng
